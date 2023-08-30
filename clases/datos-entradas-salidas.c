@@ -4,6 +4,8 @@
 // Primera variable
 char domicilio[100];
 
+char nombre[50];
+
 void putCharLearn()
 {
     printf("Función putchar()\n");
@@ -29,8 +31,8 @@ void putsLearn()
 
 void getsLearn()
 {
-    printf("Función gets()\n");
-    printf("Toma la cadenade caracteres estándar y la almacena en una variable string.\n\n");
+    printf("Función fgets()\n");
+    printf("Toma la cadena de caracteres estándar y la almacena en una variable string.\n\n");
 
     printf("Ejemplo:\n\n");
 
@@ -62,24 +64,45 @@ void printfLearn()
     printf("C\\Documents\n");
 }
 
+void fgetsLearn()
+{
+    printf("Función fgets()\n");
+    printf("Retorna una cadena de texto si es realizada correctamente.\n\n");
+
+    printf("Ejemplo:\n\n");
+
+    puts("Ingresa tu nombre:");
+    fgets(nombre, sizeof(nombre), stdin);
+
+    printf("Tu nombre es: %s\n", nombre);
+}
+
 int main()
 {
     // Definicion del idioma local
     setlocale(LC_ALL, "spanish");
 
-    putCharLearn();
+    // putCharLearn();
+
+    // printf("\n");
+
+    // putsLearn();
+
+    // printf("\n");
+
+    // getsLearn();
+
+    // printf("\n");
+
+    // printfLearn();
+
+    // printf("\n");
+
+    // printfLearn();
 
     printf("\n");
 
-    putsLearn();
-
-    printf("\n");
-
-    getsLearn();
-
-    printf("\n");
-
-    printfLearn();
+    fgetsLearn();
 
     return 0;
 }
