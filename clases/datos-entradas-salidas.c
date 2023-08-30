@@ -67,17 +67,17 @@ int main()
     // Definicion del idioma local
     setlocale(LC_ALL, "spanish");
 
-    // putCharLearn();
+    putCharLearn();
 
-    // printf("\n");
+    printf("\n");
 
-    // putsLearn();
+    putsLearn();
 
-    // printf("\n");
+    printf("\n");
 
-    // getsLearn();
+    getsLearn();
 
-    // printf("\n");
+    printf("\n");
 
     printfLearn();
 
