@@ -42,11 +42,11 @@ int main()
 {
     setlocale(LC_ALL, "spanish");
 
-    // printf("Texto dentro de main()\n");
+    printf("Texto dentro de main()\n");
 
-    // miFuncion();
+    miFuncion();
 
-    // miFuncion2();
+    miFuncion2();
 
     calculate(10, 5, '*');
 
