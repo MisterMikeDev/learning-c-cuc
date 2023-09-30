@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 
-char nombre[100], direccion[100], alergias[100], genero[1], telefono[25], fechaNacimiento[100], grupoSanguineo[10];
+char nombre[100], direccion[100], alergias[100], telefono[25], fechaNacimiento[100], grupoSanguineo[10], genero;
 float altura, peso;
 int edad;
 
@@ -26,9 +26,8 @@ void requestAddress()
 void requestGener()
 {
     printf("Genero:\n> ");
-    fgets(genero, sizeof(genero), stdin);
+    scanf("%c", &genero);
 }
-
 void requestNumber()
 {
     printf("Telefono:\n> ");
@@ -76,49 +75,27 @@ int main()
     setlocale(LC_ALL, "spanish");
 
     requestName();
-
     clearConsole();
-
     requestAddress();
-
     clearConsole();
-
     requestGener();
-
     clearConsole();
-
     requestNumber();
-
     clearConsole();
-
     requestAge();
-
     clearConsole();
-
     requestHeight();
-
     clearConsole();
-
     requestWeight();
-
     clearConsole();
-
     requestAllergies();
-
     clearConsole();
-
     requestBloodGroup();
-
     clearConsole();
-
     requestBirthDate();
-
-    printf("\n\n");
-
     clearConsole();
 
     printf("Datos del paciente:\n\n");
-
     printf("Nombre: \"%s\"\n", nombre);
     printf("Direccion postal: \"%s\"\n", direccion);
     printf("Genero: \"%s\"\n", genero);
