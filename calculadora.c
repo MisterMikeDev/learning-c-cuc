@@ -12,7 +12,7 @@ int main()
     printf("Dime el segundo numero.\n");
     scanf("%d", &Number2);
 
-    printf("Dime que operacion quieres realizar (+, -, *, /).\n");
+    printf("Dime que operacion quieres realizar (+, -, *, /, %%).\n");
     scanf(" %c", &Operator);
 
     switch (Operator)
@@ -31,6 +31,10 @@ int main()
         break;
     case '/':
         Resultado = Number1 / Number2;
+        printf("El resultado de la operación es: %d\n", Resultado);
+        break;
+    case '%':
+        Resultado = Number1 % Number2;
         printf("El resultado de la operación es: %d\n", Resultado);
         break;
     default:
